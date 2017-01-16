@@ -13,11 +13,8 @@ import toolbarStyles from './toolbarStyles.css';
 
 const createInlineToolbarPlugin = (config = {}) => {
   const defaultTheme = { buttonStyles, toolbarStyles };
-  const defaultaddLink = undefined;
 
-  const store = createStore({
-    isVisible: false,
-  });
+  const defaultaddLink = undefined;
 
   const {
     theme = defaultTheme,

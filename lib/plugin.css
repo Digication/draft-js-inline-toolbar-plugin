@@ -1,8 +1,8 @@
-.draftJsToolbar__buttonWrapper__1Dmqh {
+.draftJsToolbar__buttonWrapper{
   display: inline-block;
 }
 
-.draftJsToolbar__button__qi1gf {
+.draftJsToolbar__button{
   background: #fbfbfb;
   color: #888;
   font-size: 18px;
@@ -13,30 +13,30 @@
   width: 36px;
 }
 
-.draftJsToolbar__button__qi1gf svg {
+.draftJsToolbar__button svg {
   fill: #888;
 }
 
-.draftJsToolbar__button__qi1gf:hover, .draftJsToolbar__button__qi1gf:focus {
+.draftJsToolbar__button:hover, .draftJsToolbar__button:focus {
   background: #f3f3f3;
   outline: 0; /* reset for :focus */
 }
 
-.draftJsToolbar__active__3qcpF {
+.draftJsToolbar__active {
   background: #efefef;
   color: #444;
 }
 
-.draftJsToolbar__active__3qcpF svg {
+.draftJsToolbar__active svg {
   fill: #444;
 }
-.draftJsToolbar__separator__3U7qt {
+.draftJsToolbar__separator {
   display: inline-block;
   border-right: 1px solid #ddd;
   height: 24px;
   margin: 0 0.5em;
 }
-.draftJsToolbar__toolbar__dNtBH {
+.draftJsToolbar__toolbar {
   left: 50%;
   -webkit-transform: translate(-50%) scale(0);
           transform: translate(-50%) scale(0);
@@ -45,11 +45,12 @@
   background: #fff;
   border-radius: 2px;
   box-shadow: 0px 1px 3px 0px rgba(220,220,220,1);
-  z-index: 2;
+  z-index: 500;
+  width: 500px;
   box-sizing: border-box;
 }
 
-.draftJsToolbar__toolbar__dNtBH:after, .draftJsToolbar__toolbar__dNtBH:before {
+.draftJsToolbar__toolbar:after, .draftJsToolbar__toolbar:before {
   top: 100%;
   left: 50%;
   border: solid transparent;
@@ -60,13 +61,13 @@
   pointer-events: none;
 }
 
-.draftJsToolbar__toolbar__dNtBH:after {
+.draftJsToolbar__toolbar:after {
   border-color: rgba(255, 255, 255, 0);
   border-top-color: #fff;
   border-width: 4px;
   margin-left: -4px;
 }
-.draftJsToolbar__toolbar__dNtBH:before {
+.draftJsToolbar__toolbar:before {
   border-color: rgba(221, 221, 221, 0);
   border-top-color: #ddd;
   border-width: 6px;

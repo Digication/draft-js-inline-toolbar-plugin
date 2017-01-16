@@ -11,8 +11,9 @@ import Separator from './components/Separator';
 import buttonStyles from './buttonStyles.css';
 import toolbarStyles from './toolbarStyles.css';
 
-export default (config = {}) => {
+const createInlineToolbarPlugin = (config = {}) => {
   const defaultTheme = { buttonStyles, toolbarStyles };
+  const defaultaddLink = undefined;
 
   const store = createStore({
     isVisible: false,
@@ -20,6 +21,7 @@ export default (config = {}) => {
 
   const {
     theme = defaultTheme,
+    addLink = defaultaddLink,
     structure = [
       BoldButton,
       ItalicButton,
@@ -27,6 +29,11 @@ export default (config = {}) => {
       CodeButton,
     ]
   } = config;
+
+  const store = createStore({
+    isVisible: false,
+    addLink
+  });
 
   const toolbarProps = {
     store,
@@ -52,6 +59,8 @@ export default (config = {}) => {
     InlineToolbar: decorateComponentWithProps(Toolbar, toolbarProps),
   };
 };
+
+export default createInlineToolbarPlugin;
 
 export {
   Separator,
